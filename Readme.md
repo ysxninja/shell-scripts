@@ -4,10 +4,11 @@ Quick \& easy
 
 ## Proton Scripts
 
-> For easy proton connection, 
-           killswitch conf, 
-           proton termination, and 
-           proton status check.
+> For easy,
+- [x] proton connection, 
+- [x] killswitch conf, 
+- [x] proton termination,
+- [x] proton status check.
 
 ## Serial Number Scripts
 
