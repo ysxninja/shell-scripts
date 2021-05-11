@@ -4,7 +4,7 @@ Quick \& easy
 
 ## Proton Scripts
 
-> For easy,
+### Features:
 - [x] proton connection, 
 - [x] killswitch conf, 
 - [x] proton termination,
@@ -13,4 +13,5 @@ Quick \& easy
 ## Serial Number Scripts
 
 > Easy scripts to print system serial numbers
+
 > Recommend serialN..2.sh
