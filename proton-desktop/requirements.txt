@@ -1,0 +1,4 @@
+proton-cli
+# proton-account, (signed in) already
+notify-send
+zenity
