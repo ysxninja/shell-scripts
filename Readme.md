@@ -1,11 +1,15 @@
 # Utility scripts
 
+Quick \& easy
+
 ## Proton Scripts
 
-> For proton connection, easy killswitch conf, proton termination,
-and checking proton status.
+> For easy proton connection, 
+           killswitch conf, 
+           proton termination, and 
+           proton status check.
 
-## serialNumber(s)
+## Serial Number Scripts
 
-> Easy scripts to check system serial number
+> Easy scripts to print system serial numbers
 > Recommend serialN..2.sh
