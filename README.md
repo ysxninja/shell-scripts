@@ -2,7 +2,7 @@
 
 
 * Ultimate Push:
-   - [x] push github repos
+   - [x] push and commit to github repos
 
 * Proton:
    - [x] proton connection, 
