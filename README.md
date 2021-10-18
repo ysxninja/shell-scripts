@@ -1,9 +1,10 @@
 ![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=black&color=purple)
 
-## How to install?
-- copy shell script to your ~/.local/bin
-- install required programs for respective scripts
+### How to install?
+* copy shell script to your ~/.local/bin
+* install required programs for respective scripts
 
+### Scripts
 * Config Editor (req fzf and $EDITOR variable set):]
    - [x] edit all configs from the confort of one command (cfz)
    - [ ] finetuned editing (cf)
