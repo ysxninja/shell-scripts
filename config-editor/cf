@@ -1,0 +1,24 @@
+#!/bin/sh
+
+configs=`echo "alacritty aliases remaps ultimate-push vim zshrc zsh_history cf" | tr ' ' '\n'`
+
+selected=`printf "$configs\n" | fzf`
+
+if [[ $selected == "vim" ]] ; then
+    $EDITOR ~/.config/nvim/init.vim
+elif [[ $selected == "alacritty" ]] ; then
+    $EDITOR ~/.config/alacritty/alacritty.yml
+elif [[ $selected == "zshrc" ]] ; then
+    $EDITOR ~/.zshrc
+elif [[ $selected == "zsh_history" ]] ; then
+    $EDITOR ~/.zsh_history
+elif [[ $selected == "aliases" ]] ; then
+    $EDITOR ~/.oh-my-zsh/custom/aliases.zsh
+elif [[ $selected == "remaps" ]] ; then
+    $EDITOR ~/.local/bin/remaps
+elif [[ $selected == "ultimate-push" ]] ; then
+    $EDITOR ~/.local/bin/ultimate-push
+elif [[ $selected == "cf" ]] ; then
+    $EDITOR ~/.local/bin/cf
+fi
+
