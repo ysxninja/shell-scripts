@@ -5,8 +5,9 @@
 - install required programs for respective scripts
 
 * Config Editor (req fzf and $EDITOR variable set):]
-   - [x] edit all configs from the confort of one command
-   -   > need more configs? edit for respective system spec do a pull or issue
+   - [x] edit all configs from the confort of one command (cfz)
+   - [ ] finetuned editing (cf)
+   -   > need more configs for cf? edit for your respective system spec do a pull or issue
 
 * Ultimate Push (req git installed)
    - [x] push and commit to github repos
@@ -21,5 +22,5 @@
    - [x] External Folder Mount
    - [x] no root needed
 
-* Serial Number Scripts (req zenity):
+* Serial Number Scripts (snwithzenity req zenity):
    - [x] print system serial numbers
