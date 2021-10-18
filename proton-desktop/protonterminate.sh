@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 Status=$(protonvpn-cli status | grep "Free" -o);
 

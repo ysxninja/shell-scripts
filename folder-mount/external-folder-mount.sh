@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # script to mount disk and open directory from desktop
 
 

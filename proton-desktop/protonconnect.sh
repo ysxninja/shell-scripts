@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # preferred
 # Pass= $(zenity --password --title="Sudo Password Required");

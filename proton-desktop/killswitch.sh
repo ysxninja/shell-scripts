@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # example path statusK=~/Desktop/kill-switch/.statusKillSwitch
 
