@@ -7,8 +7,11 @@
 ### Scripts
 * Config Editor (req fzf and $EDITOR variable set):]
    - [x] edit all configs from the confort of one command (cfz)
-   - [ ] finetuned editing (cf)
+   - [x] finetuned editing (cf)
    -   > need more configs for cf? edit for your respective system spec do a pull or issue
+
+* Shell source script(sh-sauce/sauce)
+   - [x] fast easy environment variable sourcing
 
 * Ultimate Push (req git installed)
    - [x] push and commit to github repos
