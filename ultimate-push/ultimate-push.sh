@@ -1,52 +1,44 @@
 #!/bin/sh
 
-# check whether user is connected to the internet
-echo "  直 Testing Connection.... "
-echo "  📡 "
-domain="www.github.com"
-ping -c 1 -W 2 $domain > /dev/null 2>&1 && echo "  🗱  connected " || (echo "  🗶  disconnected " && echo "" && exit 4 )
+
+printf "\n\t\e[1;36m直\e[0m Testing Connection.... "
+printf "\n\t\e[1;36m📡 \e[0m"
+ping -c 1 -W 2 google.com > /dev/null 2>&1 && printf "\n\t\e[1;32m🗱  \e[0m connected " || (printf "\n\t\e[1;31m🗶 \e[0m disconnected \n" && exit 4 )
 
 status=$?
-# exit if there is no connection
+
 if test $status -eq 4
 then 
-    echo "  ☠  Exiting..."
+    printf "\n\t\e[0;31m☠  Exiting...\e[0m\n"
     exit
 else
     continue
 fi
 
 echo ""
-# set path to repository you want to push
-# add more repos and modify script follow repository2 commented example
+
 repository=""
 branch="main"
 commit="local update"
 
-read -p "  Enter path to repository: " repository
-read -p "        branch to push (default is main): " branch
-#repository2=""
-echo ""
-read -p "  Commit and add message? (Y/N): " confirm && ([[ $confirm == [yY] || $confirm == [yY][eE][sS] ]] && read -p "  Commit Message:" commit && echo "" && echo "" && git -C $repository commit -a -m "$commit" && echo "" ) || echo "  Pushing only "
+printf "\n\t"
+read -p "Enter path to repository: " repository
+printf "\n\t"
+read -p "  Branch to push (default is main): " branch
+
+printf "\n\t"
+read -p "  Commit and add message? (Y/N): " confirm && ([[ $confirm == [yY] || $confirm == [yY][eE][sS] ]] && printf "\n\t" && read -p "  Commit Message:" commit && printf "\n\n" && git -C $repository commit -a -m "$commit" && echo "" ) || printf "\t  Pushing only \n"
 if [[ $repository == "" ]]
 then 
-    echo "  ☠  Please set the repository to push..."
+    printf "\n\t☠  Please set the repository to push...\n"
     exit
 else
     continue
 fi
 
-echo ""
-echo " Pushing to repo\(s\)     .."
+printf "\n\e[1;36m\e[0m Pushing to repo \e[1;36m    ..\e[0m\n"
 
-echo ""
-
-# if you wish to set default commits uncomment below
-# echo ""
-# echo "Commiting updates"
 git -C $repository push -u origin $branch
 
+printf " \n\n\t\e[1;33m✅✅✅\e[0m\n"
 
-echo " ✅✅✅"
-
-echo "Exiting..."
