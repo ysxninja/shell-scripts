@@ -7,8 +7,9 @@
 ### Scripts
 * Ultimate pull (req git+patch/diff)
    - [x] fetch origin
-   - [x] show diff and patch
-   -   > does not actually 'pull' (it fetches origin and shows diff/patch), will add rebase/merge option later
+   - [x] show diff/patch
+   - [x] add option rebase/merge/pull
+   -   > (it fetches origin and shows diff/patch), with option for rebase/merge/pull
 
 * Config Editor (req fzf+$EDITOR variable)
    - [x] edit all configs from the confort of one command (cfz)
