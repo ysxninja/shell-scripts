@@ -27,7 +27,7 @@ printf "\n\t"
 read -p "  Branch to push (default is main): " branch
 
 printf "\n\t"
-read -p "  Commit and add message? (Y/N): " confirm && ([[ $confirm == [yY] || $confirm == [yY][eE][sS] ]] && printf "\n\t" && read -p "  Commit Message:" commit && printf "\n\n" && git -C $repository commit -a -m "$commit" && echo "" ) || printf "\t  Pushing only \n"
+read -p "  Commit and add message? (Y/N): " confirm && ([[ $confirm == [yY] || $confirm == [yY][eE][sS] ]] && printf "\n\t" && read -p "  Commit Message:" commit && printf "\n\n\t" && git -C $repository commit -a -m "$commit" && echo "" ) || printf "\n\t  Pushing only \n"
 if [[ $repository == "" ]]
 then 
     printf "\n\t☠  Please set the repository to push...\n"
@@ -36,8 +36,9 @@ else
     continue
 fi
 
-printf "\n\e[1;36m\e[0m Pushing to repo \e[1;36m    ..\e[0m\n"
+printf "\n\t\e[1;36m\e[0m Pushing to repo \e[1;36m    ..\e[0m\n"
 
+printf "\n"
 git -C $repository push -u origin $branch
 
 printf " \n\n\t\e[1;33m✅✅✅\e[0m\n"
