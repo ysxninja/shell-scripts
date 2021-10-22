@@ -4,7 +4,7 @@
 * copy shell script to your ~/.local/bin
 * install required programs for respective scripts
 
-### Scripts
+### 🐚Scripts
 * Ultimate pull (req git+patch/diff)
    - [x] fetch origin
    - [x] show diff/patch
