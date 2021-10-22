@@ -4,12 +4,12 @@
 * copy shell script to your ~/.local/bin
 * install required programs for respective scripts
 
-### Scripts
+### 🐚Scripts
 * Ultimate pull (req git+patch/diff)
    - [x] fetch origin
    - [x] show diff/patch
    - [x] add option rebase/merge/pull
-   -   > (it fetches origin and shows diff/patch), with option for rebase/merge/pull
+   -   > (fetch origin and shows diff/patch), with option for rebase/merge/pull
 
 * Config Editor (req fzf+$EDITOR variable)
    - [x] edit all configs from the confort of one command (cfz)
