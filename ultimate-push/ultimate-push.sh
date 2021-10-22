@@ -6,6 +6,10 @@ printf "\n\e[1;36m📡 \e[0m"
 ping -c 1 -W 2 google.com > /dev/null 2>&1 && printf "\n\e[1;32m🗱  \e[0m connected " || (printf "\n\e[1;31m🗶 \e[0m disconnected \n" && exit 4 )
 
 status=$?
+statusbranch=$(git branch --show-current > /dev/null 2>&1 && printf 0 || printf 1)
+branch="main"
+repository=""
+commit="local update"
 
 if test $status -eq 4
 then 
@@ -15,16 +19,16 @@ else
     continue
 fi
 
-printf "\n"
+if test $statusbranch -eq 0
+then
+    branch=$(git branch --show-current)
+fi
 
-repository=""
-branch="main"
-commit="local update"
+printf "\n\n"
 
-printf "\n"
 read -p "Enter path to repository: " repository
 printf "\n"
-read -p "  Branch to push (default is main): " branch
+read -p "  Branch to push (default is $branch): " branch
 
 printf "\n"
 read -p "  Commit and add message? (Y/N): " confirm && ([[ $confirm == [yY] || $confirm == [yY][eE][sS] ]] && printf "\n" && read -p "  Commit Message:" commit && printf "\n    Message: $commit" && printf "\n\n" && git -C $repository commit -a -m "$commit" && printf "\n" ) || printf "\n  Pushing only \n"
