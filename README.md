@@ -23,14 +23,13 @@
    - [x] push and commit to github repos
 
 * Proton (req proton-cli):
-   - [x] proton connection, 
-   - [x] killswitch conf, 
-   - [x] proton termination,
+   - [x] proton connection 
+   - [x] killswitch conf 
+   - [x] proton termination
    - [x] proton status check
 
 * Folder Mount (req udisksctl)
-   - [x] External Folder Mount
-   - [x] no root needed
+   - [x] external Folder Mount without root access
 
-* Serial Number Scripts (snwithzenity req zenity):
+* Serial Number Scripts (snwithzenity req zenity)
    - [x] print system serial numbers
