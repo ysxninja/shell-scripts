@@ -14,7 +14,7 @@ _populate_system(){
   systemInfo["Maximum Supported Ram"]=$(dmidecode -t memory | awk '/Maximum Capacity/ { print $3$4;}')
   systemInfo["Manufacturer"]=$(dmidecode --string=baseboard-manufacturer)
   systemInfo["Processor"]="$(dmidecode --string=processor-manufacturer) $(dmidecode --string=processor-family) $(dmidecode -t processor | awk '/Current Speed/ { print $3$4;}') - $(dmidecode -t processor | awk '/Max Speed/ { print $3$4;}')"
-  systemInfo["No of Cores"]="$(dmidecode -t processor | awk '/Core Count/ { print $3;}')"
+  systemInfo["No of Cores"]="$(dmidecode -t processor | awk '/Core Count/ { print $3;}') cores"
   systemInfo["Serial Number"]=$(dmidecode --string=system-serial-number)
   systemInfo["Product Name"]=$(dmidecode --string=system-product-name)
   systemInfo["Rom Size"]=$(dmidecode -t bios | awk '/ROM/ { print $3 $4 }')
