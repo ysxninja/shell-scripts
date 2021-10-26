@@ -9,10 +9,11 @@ _terminator(){
 }
 _populate_system(){
   systemInfo["Ram Type"]="$(dmidecode -t memory | awk '/Type/ {i++}i==2 { print $2;}')"
-  systemInfo["Ram Size"]=$(dmidecode -t memory | awk '/Size/ { print $2$3;exit }')
-  systemInfo["Ram Speed"]=$(dmidecode -t memory | awk '/Speed/ { print $2 $3;exit }')
+  systemInfo["Ram Size"]=$(dmidecode -t memory | awk 'BEGIN{slot=0;}/Size/ { slot+=1;printf "slot" slot" " $2$3" "}')
+  systemInfo["Ram Speed"]=$(dmidecode -t memory | awk 'BEGIN{slot=0;}$1 ~ /^Speed/ { slot+=1;printf "slot" slot" " $2 $3 " " }')
   systemInfo["Maximum Supported Ram"]=$(dmidecode -t memory | awk '/Maximum Capacity/ { print $3$4;}')
   systemInfo["Manufacturer"]=$(dmidecode --string=baseboard-manufacturer)
+  # dmidecode -t processor | awk '$1 ~ /Family/{ print $2"",$3 }'
   systemInfo["Processor"]="$(dmidecode --string=processor-manufacturer) $(dmidecode --string=processor-family) $(dmidecode -t processor | awk '/Current Speed/ { print $3$4;}') - $(dmidecode -t processor | awk '/Max Speed/ { print $3$4;}')"
   systemInfo["No of Cores"]="$(dmidecode -t processor | awk '/Core Count/ { print $3;}')"
   systemInfo["Serial Number"]=$(dmidecode --string=system-serial-number)
