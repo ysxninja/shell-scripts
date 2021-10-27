@@ -33,3 +33,6 @@
 
 * Serial Number Scripts (snwithzenity req zenity)
    - [x] print system serial numbers
+
+
+![](https://media.giphy.com/media/FlWgXEtj5aM5G/giphy.gif)
