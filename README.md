@@ -33,9 +33,7 @@
 
 * Serial Number Scripts (snwithzenity req zenity)
    - [x] print system serial numbers
-```diff
--text
-```
+
 ### `System-Info`:
    The following information queries dmidecode bios table for system information.
   1. Ram Size on both slots.
