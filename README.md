@@ -52,8 +52,8 @@
    2. Copy the following command and paste in your terminal
 
 ```import copy from 'copy-to-clipboard'
-    bin_path="/usr/local/bin/sysinfo";cd shell-scripts/System-Info <br> 
-    chmod +x ./sysinfo.sh && ln -s $(pwd)/sysinfo.sh $bin_path <br> unset bin_path;
+    bin_path="/usr/local/bin/sysinfo";cd shell-scripts/System-Info 
+    chmod +x ./sysinfo.sh && ln -s $(pwd)/sysinfo.sh $bin_path && unset bin_path;
 ``` 
   
 ![](https://media.giphy.com/media/FlWgXEtj5aM5G/giphy.gif)
