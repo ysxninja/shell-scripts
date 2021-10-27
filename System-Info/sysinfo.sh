@@ -1,11 +1,21 @@
 #!/usr/bin/env bash
+# set -x;
 declare -A systemInfo;
 hostname=$(hostname)
 termSize=( $(stty size) )
 process_watcher=0;
+
 _terminator(){
   echo -ne "\r\r"
   echo -ne "\u274C"
+}
+_help(){
+  echo -e " \033[1;34m You must run the command as sudo or root use sudo \n sudo $0 or login as root\033[m"
+}
+_check_perm(){
+    if [[ ${EUID} -ne 0 ]]; then
+      _help && exit 244;
+    fi
 }
 _populate_system(){
   systemInfo["Ram Type"]="$(dmidecode -t memory | awk '/Type/ {i++}i==2 { print $2;}')"
@@ -23,6 +33,7 @@ _populate_system(){
 }
 
 _(){
+    _check_perm
     clear && _populate_system
     compname="Computer name - "
     text_length=$(( ${#compname} + ${#hostname} ))
