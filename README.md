@@ -34,5 +34,17 @@
 * Serial Number Scripts (snwithzenity req zenity)
    - [x] print system serial numbers
 
+## The system infor script gets you system specific information including:
+  1. Ram Size on both slots.
+  2. Rom Size.
+  3. Processor type & clock speed.
+  4. Ram Speed.
+  5. Manufacturer information.
+  6. Os Architecture.
+  7. Maximum supported Ram size.
+  8. Ram Type.
+  9. Serial Number.
+  10. No of cpu Cores.
+
 
 ![](https://media.giphy.com/media/FlWgXEtj5aM5G/giphy.gif)
