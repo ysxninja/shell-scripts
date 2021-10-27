@@ -62,12 +62,16 @@ _(){
 
 
     _auth0r="@\u1CE1Morph 💀\u2020\u2122"
+    
     text_length=${#_auth0r}
     for (( i = 0; i < $(( $(( ${termSize[1]} - $text_length  )) / 2 )); i++ )); do
       echo -ne " "
     done
     echo -e "\033[1;31mAuthor $_auth0r\033[m\n\n"
 }
+# ignore kill attempts
 # trap _terminator SIGINT
 trap "" SIGINT
+
+# start entry point of bourne script
 _
