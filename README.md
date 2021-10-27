@@ -35,7 +35,7 @@
    - [x] print system serial numbers
 
 ### `System-Info`:
-   Information the script reads from dmidecode bios table.
+   The following information queries dmidecode bios table for system information.
   1. Ram Size on both slots.
   2. Rom Size.
   3. Processor type & clock speed.
@@ -57,6 +57,6 @@ cd shell-scripts/System-Info;
 chmod +x ./sysinfo.sh;
 ln -sv $(pwd)/sysinfo.sh $bin_path && unset bin_path;
 ```
-Anytime you want to query for system information, `sysinfo` will be go to command. Yay!
+Now that that is all done,anytime you want to query for system information, `sysinfo` will be go to command. Yay!
   
 ![](https://media.giphy.com/media/FlWgXEtj5aM5G/giphy.gif)
