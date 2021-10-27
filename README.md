@@ -23,8 +23,8 @@
    - [x] push and commit to github repos
 
 * Proton (req proton-cli):
-   - [x] proton connection 
-   - [x] killswitch conf 
+   - [x] proton connection
+   - [x] killswitch conf
    - [x] proton termination
    - [x] proton status check
 
@@ -34,7 +34,7 @@
 * Serial Number Scripts (snwithzenity req zenity)
    - [x] print system serial numbers
 
-### `System-Info`:
+### `System-Info` 💀:
    The following information queries dmidecode bios table for system information.
   1. Ram Size on both slots.
   2. Rom Size.
@@ -46,7 +46,7 @@
   8. Ram Type.
   9. Serial Number.
   10. No of cpu Cores.
-   
+
    #### `Installation instructions:`
    1. clone this repo into your local machine.
    2. Copy the following command and paste in your terminal.
@@ -58,5 +58,5 @@ chmod +x ./sysinfo.sh;
 ln -sv $(pwd)/sysinfo.sh $bin_path && unset bin_path;
 ```
 Now that that is all done,anytime you want to query for system information, `sysinfo` will be go to command. Yay!
-  
+
 ![](https://media.giphy.com/media/FlWgXEtj5aM5G/giphy.gif)
