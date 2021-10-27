@@ -1,3 +1,4 @@
+import copy from 'copy-to-clipboard';
 ![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=black&color=purple)
 
 ### How to install?
@@ -34,7 +35,8 @@
 * Serial Number Scripts (snwithzenity req zenity)
    - [x] print system serial numbers
 
-## The system infor script gets you system specific information including:
+### `System-Info`:
+   Information the script reads from dmidecode bios table.
   1. Ram Size on both slots.
   2. Rom Size.
   3. Processor type & clock speed.
@@ -45,6 +47,9 @@
   8. Ram Type.
   9. Serial Number.
   10. No of cpu Cores.
-
-
+   
+   #### `Installation instructions:`
+   1. clone this repo into your local machine.
+   2. bin_path="/usr/local/bin/sysinfo";cd shell-scripts/System-Info && chmod +x ./sysinfo.sh && ln -s $(pwd)/sysinfo.sh $bin_path; 
+   copy("morph")
 ![](https://media.giphy.com/media/FlWgXEtj5aM5G/giphy.gif)
