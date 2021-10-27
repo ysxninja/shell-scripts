@@ -57,6 +57,6 @@ cd shell-scripts/System-Info;
 chmod +x ./sysinfo.sh;
 ln -sv $(pwd)/sysinfo.sh $bin_path && unset bin_path;
 ```
-Now after that is all done, your new command will be `sysinfo`. Anytime you want to query for system information, `sysinfo` will be go to command. Yay!
+Anytime you want to query for system information, `sysinfo` will be go to command. Yay!
   
 ![](https://media.giphy.com/media/FlWgXEtj5aM5G/giphy.gif)
