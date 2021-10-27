@@ -1,8 +1,5 @@
 ```import copy from 'copy-to-clipboard'
-   copy('morph')
-copy('Text', {
-  debug: true,
-  message: 'Press #{key} to copy',
+   Morph
 });
 
 ```
