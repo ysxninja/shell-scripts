@@ -1,8 +1,3 @@
-```import copy from 'copy-to-clipboard'
-   Morph
-});
-
-```
 ![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=black&color=purple)
 
 ### How to install?
@@ -54,6 +49,10 @@
    
    #### `Installation instructions:`
    1. clone this repo into your local machine.
-   2. bin_path="/usr/local/bin/sysinfo";cd shell-scripts/System-Info && chmod +x ./sysinfo.sh && ln -s $(pwd)/sysinfo.sh $bin_path; 
+   2. Copy the following command and paste in your terminal
+
+```import copy from 'copy-to-clipboard'
+    `bin_path="/usr/local/bin/sysinfo";cd shell-scripts/System-Info && chmod +x ./sysinfo.sh && ln -s $(pwd)/sysinfo.sh $bin_path && unset bin_path;`
+``` 
   
 ![](https://media.giphy.com/media/FlWgXEtj5aM5G/giphy.gif)
