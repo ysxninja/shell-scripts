@@ -35,7 +35,7 @@
    - [x] print system serial numbers
 
 ### `💀  System-Info` :
-   The following information queries dmidecode bios table for system information.
+   The following information are queried dmidecode bios table for system information.
   1. Ram Size on both slots.
   2. Rom Size.
   3. Processor type & clock speed.
