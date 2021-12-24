@@ -1,10 +1,10 @@
 ![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=black&color=purple)
 
-### How to install?
+### How to use/install?
 * copy shell script to your ~/.local/bin
 * install required programs for respective scripts
 
-### 🐚Scripts
+### Simple Shell Scripts
 * Ultimate pull (req git+patch/diff)
    - [x] fetch origin
    - [x] show diff/patch
@@ -33,30 +33,3 @@
 
 * Serial Number Scripts (snwithzenity req zenity)
    - [x] print system serial numbers
-
-### `💀  System-Info` :
-   The following information are queried from dmidecode bios table for system information.
-  1. Ram Size on both slots.
-  2. Rom Size.
-  3. Processor type & clock speed.
-  4. Ram Speed.
-  5. Manufacturer information.
-  6. Os Architecture.
-  7. Maximum supported Ram size.
-  8. Ram Type.
-  9. Serial Number.
-  10. No of cpu Cores.
-
-   #### `Installation instructions:`
-   1. clone this repo into your local machine.
-   2. Copy the following command and paste in your terminal.
-
-```import copy from 'copy-to-clipboard'
-bin_path="/usr/local/bin/sysinfo";
-cd shell-scripts/System-Info;
-chmod +x ./sysinfo.sh;
-ln -sv $(pwd)/sysinfo.sh $bin_path && unset bin_path;
-```
-Now that that is all done,anytime you want to query for system information, `sysinfo` will be go to command. Yay!
-
-![](https://media.giphy.com/media/FlWgXEtj5aM5G/giphy.gif)
